@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>JS Game</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container__contenido">
+            <div class="container__informaciones">
+                <div class="container__texto">
+                    <h1></h1>
+                    <p class="texto__parrafo"></p>
+                </div>
+                <input type="number" id="valorUsuario" min="1" max="10" class="container__input" oninput="validarInput();">
+                <div class="chute container__botones">
+                    <button onclick="verificarIntento();" class="container__boton" id="Oninput" >Intentar</button>
+                    <button onclick="reiniciarJuego();" class="container__boton" id="reiniciar" disabled>Nuevo juego</button>
+                </div>
+            </div>
+            <img src="./img/ia.png" alt="Una persona mirando a la izquierda" class="container__imagen-persona" />
+        </div>
+    </div>
+<footer>
+    <div class="Credits">
+        <ul class="lista-creditos">
+            <li><p>Co-creado con <a href="https://www.aluracursos.com/" target="_blank" rel="">Alura - One</a> </p></li>
+            <li><p>Estudiante: <a href="https://github.com/juanrodriguez9/" target="_blank" rel="">Juan Rodriguez</a> </p></li>
+        </ul>
+    </div>
+</footer>
+
+<script src="app.js" ></script>
+</body>
+
+</html>
